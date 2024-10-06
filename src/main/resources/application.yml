@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: orders
+    datasource:
+        url: jdbc:postgres://localhost:3306/orders
+        username: root
+        password: root
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: validate
+        show-sql: true
+    liquibase:
+        change-log: classpath:db/changelog/db.changelog-master.xml
